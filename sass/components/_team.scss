@@ -1,13 +1,10 @@
 .team {
   background: getColor('bgc-grayish');
   padding: 60px 0;
+
   @media screen and (min-width: 1200px) {
     padding: 94px 0;
   }
-}
-
-.team img {
-  width: 100%;
 }
 
 .container {

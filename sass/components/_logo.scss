@@ -25,6 +25,7 @@
   @extend %logo;
   @include indent($indent: 0 0 20px 0);
   display: inline-block;
+
   color: getColor('primary-white-color');
 
   @media screen and (max-width: 1199px) {

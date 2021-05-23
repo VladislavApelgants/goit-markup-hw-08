@@ -43,13 +43,16 @@
 .customers__link {
   display: flex;
   height: 90px;
-  border: 1px solid getColor('team-icon-color');
-  border-radius: 4px;
-  fill: getColor('team-icon-color');
   align-items: center;
   justify-content: center;
 
+  border: 1px solid getColor('team-icon-color');
+  fill: getColor('team-icon-color');
+
+  border-radius: 4px;
+
   transition: fill 250ms $main-cubic, border-color 250ms $main-cubic;
+
   &:hover,
   &:focus {
     fill: getColor('active-color');

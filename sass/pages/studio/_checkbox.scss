@@ -3,8 +3,9 @@
   align-items: center;
   min-width: 16px;
   height: 15px;
-  border: 1px solid getColor('logo-link-color');
   margin-right: 8px;
+
+  border: 1px solid getColor('logo-link-color');
   transition: background-color 250ms $main-cubic, border-color 250ms $main-cubic;
 
   .feedback__checkbox:checked + & {
