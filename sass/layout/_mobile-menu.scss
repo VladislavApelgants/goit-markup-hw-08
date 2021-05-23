@@ -98,6 +98,11 @@
   }
 }
 
+.button__icon-cross,
+.button__icon-menu {
+  transition: fill 4255ms $main-cubic;
+}
+
 @media screen and (max-width: 767px) {
   .button__menu .button__icon-cross {
     opacity: 0;
@@ -105,12 +110,10 @@
 
   .button__menu.is-open .button__icon-cross {
     opacity: 1;
-    transition: fill 255ms $main-cubic;
   }
 
   .button__menu.is-open .button__icon-menu {
     opacity: 0;
-    transition: fill 255ms $main-cubic;
   }
 
   .button__menu:hover,

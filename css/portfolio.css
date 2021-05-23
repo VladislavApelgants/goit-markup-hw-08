@@ -781,17 +781,20 @@ a {
   }
 }
 
+.button__icon-cross,
+.button__icon-menu {
+  transition: fill 4255ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @media screen and (max-width: 767px) {
   .button__menu .button__icon-cross {
     opacity: 0;
   }
   .button__menu.is-open .button__icon-cross {
     opacity: 1;
-    transition: fill 255ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .button__menu.is-open .button__icon-menu {
     opacity: 0;
-    transition: fill 255ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .button__menu:hover .button__icon-cross,
   .button__menu:hover .button__icon-menu,

@@ -24,7 +24,6 @@
 
   @media screen and (min-width: 769px) {
     background-image: linear-gradient($gradient-hero), url(../images/desktop/hero/hero.jpg);
-    padding: 200px 0;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient($gradient-hero), url(../images/desktop/hero/hero@2x.jpg);
