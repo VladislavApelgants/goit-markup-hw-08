@@ -11,6 +11,7 @@
   opacity: 0;
   pointer-events: none;
   z-index: 99;
+  transition: opacity 255ms $main-cubic;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -104,10 +105,12 @@
 
   .button__menu.is-open .button__icon-cross {
     opacity: 1;
+    transition: fill 255ms $main-cubic;
   }
 
   .button__menu.is-open .button__icon-menu {
     opacity: 0;
+    transition: fill 255ms $main-cubic;
   }
 
   .button__menu:hover,
