@@ -1,0 +1,30 @@
+.address__list {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
+.address__link {
+  @extend %link;
+  font-family: inherit;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address__link--map {
+  color: getColor('primary-white-color');
+}
+
+.address__link--contacts {
+  color: getColor('color-mail-phone');
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 10px;
+}

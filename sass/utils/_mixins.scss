@@ -1,0 +1,9 @@
+@mixin centeredFlex($display: flex, $justify: center, $align: center) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin indent($indent) {
+  margin: $indent;
+}

@@ -1,0 +1,44 @@
+.button__primary {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+
+  border-radius: 4px;
+  border-color: transparent;
+  align-items: center;
+  text-align: center;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: getColor('primary-white-color');
+  background-color: getColor('active-color');
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.button__send {
+  @include centeredFlex($display: inline-flex);
+  fill: getColor('primary-white-color');
+
+  min-height: 50px;
+  margin-left: 12px;
+}
+
+.modal__button {
+  margin-left: 50%;
+  margin-right: 50%;
+  transform: translateX(-50%);
+  transition: box-shadow 250ms $main-cubic;
+
+  &:hover,
+  &:focus {
+    box-shadow: $button-modal-shadow;
+  }
+}

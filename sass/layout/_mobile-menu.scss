@@ -1,0 +1,126 @@
+.header__mobile-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  max-height: 796px;
+  padding: 48px 40px;
+
+  background-color: #ffffff;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 99;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.navigation__mobile-item {
+  & + & {
+    margin-top: 32px;
+  }
+}
+
+.navigation__mobile-link {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: getColor(logo-link-color);
+}
+
+.navigation__mobile-link--current {
+  color: getColor(active-color);
+}
+.contacts__mobile-link {
+  @extend %contacts__mobile-link;
+}
+
+.contacts__mobile-link--current {
+  line-height: 1.17;
+  color: getColor(active-color);
+
+  @media screen and (max-width: 479px) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+  }
+}
+.contacts__mobile-list {
+  margin-top: 302px;
+}
+
+.contacts__mobile-item {
+  & + & {
+    margin-top: 32px;
+  }
+}
+
+.socials__mobile-list {
+  display: flex;
+
+  @media screen and (max-width: 479px) {
+    flex-wrap: wrap;
+  }
+}
+
+.socials__mobile-link {
+  display: inline-block;
+  padding: 0 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: getColor(active-color);
+}
+
+.socials__mobile-list {
+  margin-top: 64px;
+}
+
+.button__menu {
+  background-color: transparent;
+  border: transparent;
+  margin-left: auto;
+  z-index: 100;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button__menu .button__icon-cross {
+    opacity: 0;
+  }
+
+  .button__menu.is-open .button__icon-cross {
+    opacity: 1;
+  }
+
+  .button__menu.is-open .button__icon-menu {
+    opacity: 0;
+  }
+
+  .button__menu:hover,
+  .button__menu:focus {
+    .button__icon-cross,
+    .button__icon-menu {
+      fill: getColor(active-color);
+    }
+  }
+
+  .is-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: stroke;
+  }
+}

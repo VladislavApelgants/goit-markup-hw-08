@@ -1,0 +1,26 @@
+.button {
+  display: inline-block;
+  padding: 6px 22px;
+
+  border-radius: 4px;
+  border-color: transparent;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  background-color: getColor('bgc-grayish');
+  color: getColor('main-dark-color');
+
+  transition: background-color 250ms $main-cubic, color 250ms $main-cubic, box-shadow 250ms $main-cubic;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('active-color');
+    color: getColor('primary-white-color');
+    cursor: pointer;
+    box-shadow: $shadow-button;
+  }
+}

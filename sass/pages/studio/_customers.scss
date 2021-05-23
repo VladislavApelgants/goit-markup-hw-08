@@ -1,0 +1,70 @@
+.customers {
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
+.container {
+  @extend %container;
+}
+
+.customers__list {
+  display: flex;
+  list-style: none;
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
+.customers__item {
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    & + & {
+      margin-left: 30px;
+    }
+  }
+}
+
+.customers__link {
+  display: flex;
+  height: 90px;
+  border: 1px solid getColor('team-icon-color');
+  border-radius: 4px;
+  fill: getColor('team-icon-color');
+  align-items: center;
+  justify-content: center;
+
+  transition: fill 250ms $main-cubic, border-color 250ms $main-cubic;
+  &:hover,
+  &:focus {
+    fill: getColor('active-color');
+    border-color: getColor('active-color');
+  }
+
+  @media screen and (max-width: 479px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}

@@ -1,0 +1,78 @@
+.footer__subscribe {
+  margin-left: auto;
+  z-index: 1;
+}
+
+.subscribe__title {
+  display: inline-block;
+  @include indent($indent: 0 0 20px 0);
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: getColor('primary-white-color');
+}
+
+.subscribe__label {
+  position: absolute;
+  top: 15%;
+  left: 17px;
+  transform: translateY(-15%);
+  color: getColor('color-mail-phone');
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    left: 160px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.subscribe__form {
+  position: relative;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.subscribe__input-email {
+  padding: 15px 16px;
+
+  color: getColor('primary-white-color');
+  background-color: transparent;
+  border: 1px solid getColor('border-input-email');
+  box-shadow: $button-modal-shadow;
+  border-radius: 4px;
+
+  &:focus + .subscribe__label,
+  &:not(:placeholder-shown) + .subscribe__label {
+    opacity: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
+  }
+}
+
+.subscribe__icon-send {
+  margin-left: 10px;
+}

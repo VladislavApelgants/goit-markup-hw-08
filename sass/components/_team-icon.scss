@@ -1,0 +1,37 @@
+.team__item-icon {
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.team__link {
+  @include centeredFlex();
+  height: 44px;
+  width: 44px;
+  border-radius: 50px;
+
+  background-color: getColor('primary-white-color');
+}
+
+.team__link--foter {
+  background-color: getColor('bgc-icon-footer');
+  fill: getColor('primary-white-color');
+  transition: background-color 250ms $main-cubic;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('active-color');
+  }
+}
+
+.team__link--main {
+  background-color: getColor('primary-white-color');
+  fill: getColor('team-icon-color');
+  transition: fill 250ms $main-cubic, background-color 250ms $main-cubic;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('active-color');
+    fill: getColor('primary-white-color');
+  }
+}

@@ -1,0 +1,55 @@
+.modal {
+  position: relative;
+
+  padding: 40px;
+  background-color: getColor('primary-white-color');
+  box-shadow: $card-shadow;
+  border-radius: 4px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+    max-height: 609px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    max-height: 581px;
+  }
+}
+
+.modal__close-container {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+  background-color: getColor('primary-white-color');
+  border: 1px solid getColor('logo-link-color');
+}
+
+.modal__close-btn {
+  fill: getColor('logo-link-color');
+  transition: fill 250ms $main-cubic;
+
+  .modal__close-container:hover &,
+  .modal__close-container:focus & {
+    fill: getColor('active-color');
+  }
+}
