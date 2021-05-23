@@ -527,6 +527,11 @@ a {
   color: #2196f3;
 }
 
+.socials__mobile-item:last-child .socials__mobile-link {
+  border-right: none;
+  padding-right: 0;
+}
+
 .socials__mobile-list {
   margin-top: 64px;
 }
@@ -546,7 +551,7 @@ a {
 
 .button__icon-cross,
 .button__icon-menu {
-  transition: fill 4255ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 255ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 767px) {
@@ -1206,6 +1211,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
     padding: 200px 0;
   }
 }
@@ -1265,6 +1271,7 @@ a {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  z-index: 101;
 }
 
 @media screen and (min-width: 480px) {

@@ -36,6 +36,7 @@
 .navigation__mobile-link--current {
   color: getColor(active-color);
 }
+
 .contacts__mobile-link {
   @extend %contacts__mobile-link;
 }
@@ -83,6 +84,11 @@
   color: getColor(active-color);
 }
 
+.socials__mobile-item:last-child .socials__mobile-link {
+  border-right: none;
+  padding-right: 0;
+}
+
 .socials__mobile-list {
   margin-top: 64px;
 }
@@ -100,7 +106,7 @@
 
 .button__icon-cross,
 .button__icon-menu {
-  transition: fill 4255ms $main-cubic;
+  transition: fill 255ms $main-cubic;
 }
 
 @media screen and (max-width: 767px) {

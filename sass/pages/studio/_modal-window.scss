@@ -5,6 +5,7 @@
   background-color: getColor('primary-white-color');
   box-shadow: $card-shadow;
   border-radius: 4px;
+  z-index: 101;
 
   @media screen and (min-width: 480px) {
     max-width: 450px;
