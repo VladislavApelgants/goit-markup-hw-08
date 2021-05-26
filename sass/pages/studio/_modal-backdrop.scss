@@ -10,6 +10,7 @@
   opacity: 1;
   transition: opacity 250ms $main-cubic;
   overflow-y: scroll;
+  z-index: 115;
 
   @media screen and (max-width: 767px) {
     padding: 93px 15px 94px 15px;

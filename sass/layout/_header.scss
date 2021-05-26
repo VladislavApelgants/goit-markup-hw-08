@@ -1,13 +1,13 @@
 .header {
   border-bottom: 1px solid getColor('color-border-header');
+  @media screen and (max-width: 767px) {
+    position: relative;
+    padding: 16px 15px;
+    z-index: 103;
+  }
 }
 
 .header__panel {
   @extend %container;
   @include centeredFlex($justify: flex-start);
-
-  @media screen and (max-width: 767px) {
-    position: relative;
-    padding: 16px 15px;
-  }
 }

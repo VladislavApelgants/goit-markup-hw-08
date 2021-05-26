@@ -2,10 +2,6 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 30px;
-  }
 }
 
 .address__link {
@@ -27,4 +23,10 @@
 
 .address__item:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.footer__address {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
